@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+	
+	<header class="header">
+        <div class="logo">
+            <img src="img/logo.webp" alt="logo">
+        </div>                      
+        <nav>
+            <ul class="nav-links"> 	
+                <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#pasteles" onclick="closeNav()"><i class="fas fa-birthday-cake"></i> Pasteles</a></li>
+                <li><a href="#"><i class="fas fa-cookie"></i> Postres</a></li>
+                <li><a href="#">Panes</a></li>
+            </ul>
+        </nav>
+        <a href="#contactar" class="btn"><button>Contacto</button></a>
+        <a onclick="openNav()" class="menu" href="#"><button><i class="fas fa-bars"></i></button></a>
+
+        <div class="overlay" id="mobile-menu">
+            <div class="overlay-content">
+				<a href="#" onclick="closeNav()"><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar</a>
+				<a href="#pasteles" onclick="closeNav()"><i class="fas fa-birthday-cake"></i>Pasteles</a>
+				<a href="#" onclick="closeNav()"><i class="fas fa-cookie"></i>Postres</a>
+				<a href="#" onclick="closeNav()"><i class="fas fa-bread-slice"></i>Panes</a>
+				<a href="#contactar" onclick="closeNav()"><i class="fas fa-envelope"></i>Contacto</a>
+			</div>
+		</div>
+	</header>
+	
+    <section id="container-slider">	
+		<ul class="listslider">
+			<li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+			<li><a itlist="itList_1" href="#" class="item-select-slid"></a></li>
+			<li><a itlist="itList_2" href="#" class="item-select-slid"></a></li>
+			<li><a itlist="itList_3" href="#" class="item-select-slid"></a></li>
+		</ul>
+		<ul id="slider">
+			<li style="
+			background-image: url('img/slide0.webp'), linear-gradient(to top, rgba(219, 35, 158, 0.651), rgb(255, 255, 255));
+			z-index:1; opacity: 1;">
+				<div class="content_slider" >
+					<div>
+						<h2>Pasteles perzonalizados</h2>
+						<p>Figuras comestibles</p>
+					</div>
+				</div>
+			</li>
+			<li style="
+			background-image: url('img/slide1.webp'), linear-gradient(to top, rgba(101, 176, 199, 0.651), rgba(255, 255, 255, 0.788));
+			z-index:1; opacity: 1;">
+				<div class="content_slider" >
+					<div>
+						<h2>Cada pastel es un sueño</h2>
+						<p>Algo especial, para alguien especial</p>
+					</div>
+				</div>
+			</li>
+			<li style="
+			background-image: url('img/slide2.webp'), linear-gradient(to top, rgba(46, 209, 54, 0.747), rgb(255, 255, 255));
+			z-index:1; opacity: 1;">
+				<div class="content_slider" >
+					<div>
+						<h2>Postres y abrebocas</h2>
+						<p>Nos ajustamos al presupuesto de cada cliente</p>
+					</div>
+				</div>
+			</li>
+			<li style="
+			background-image: url('img/slide3.webp'), linear-gradient(to top, rgba(214, 38, 38, 0.747), rgb(255, 255, 255));
+			z-index:1; opacity: 1;">
+				<div class="content_slider" >
+					<div>
+						<h2>Postres y abrebocas</h2>
+						<p>Nos ajustamos al presupuesto de cada cliente</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+    <script type= "text/javascript" src="function.js"></script>
+
+	<div class="title">
+		<h3 class="tpack">PAQUETE DE PASTELES</h3>
+		<h4>Arte y Sabor</h4>
+	</div>
+
+	<div class="cards-container">
+		<div class="card">
+		  <h3>PAQUETE #1</h3>
+		  <img src="img/pack2.png " alt="Producto 1" loading="lazy">
+		  <p><i class="fa-solid fa-check"></i> Pastel de 25</p>
+		  <p><i class="fa-solid fa-check"></i> 12 Cupcackes</p>
+		  <p><i class="fa-solid fa-check"></i> 12 Galletas</p>
+		  <p><i class="fa-solid fa-check"></i> 12 Minidonuts</p>
+		  <div class="price">$45.00</div>
+		</div>
+	
+		<div class="card">
+		  <h3>Paquete #2</h3>
+		  <img src="img/pack1.png" alt="Producto 2" loading="lazy"> 
+		  <p><i class="fa-solid fa-check"></i> Pastel de 25$</p>
+		  <p><i class="fa-solid fa-check"></i> Pastel de 30$</p>
+		  <p><i class="fa-solid fa-check"></i> 12 Minidonuts</p>
+		  <p><i class="fa-solid fa-check"></i> 12 Galletas</p>
+		  <p><i class="fa-solid fa-check"></i> 12 Cupcackes</p>
+		  <div class="price">$60.00</div>
+		</div>
+	</div>
+
+	<div class="title">
+		<h3 class="tpack">Un pastel para cada ocasión</h3>
+		<h4>Pasteles Temáticos</h4>
+	</div>
+
+	<section class="productos">
+        <article class="producto">
+            <img src="img/tematico0.webp" alt="Pastel de Chocolate" loading="lazy">
+			<div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+        <article class="producto">
+            <img src="img/tematico1.webp" alt="Pastel de Fresa" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico2.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+        <article class="producto">
+            <img src="img/tematico3.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico4.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico6.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico7.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico8.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico9.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico10.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico11.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico12.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico13.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico14.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico15.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico16.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico17.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico18.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico19.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico20.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico21.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico22.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+		<article class="producto">
+            <img src="img/tematico23.webp" alt="Pastel de Chocolate" loading="lazy">
+            <div class="footerproduct">
+				<p class="precio">$18.00</p>
+				<button class="boton-comprar">Pedir</button>
+			</div>
+        </article>
+        <!-- Agrega más productos aquí -->
+	</section>
+
+	<section id=contactar class="contact-section">
+		<div class="contact-title">
+			<h2>¡Contáctanos!</h2>
+		</div>
+		<div class="contact-buttons">
+			<a href="https://api.whatsapp.com/send?phone=TUNUMERODEWHATSAPP" target="_blank" class="w-button">
+				<i class="fab fa-whatsapp"  ></i>
+				<span class="button-text">Escribenos por WhatsApp</span>
+			</a>
+			<a href="https://www.instagram.com/dulcessaleyda/" target="_blank" class="instagram-button">
+				<i class="fab fa-instagram"></i>
+				<span class="button-text">Siguenos en Instagram</span>
+			</a>
+		</div>
+		<div class="contact-title">
+			<br>
+			<h2>Opciones de pago</h2> 
+		</div>
+		<div class="pago">
+			<div class="metod">
+				<img src="img/m1.png" alt= "Producto 1" loading="lazy">
+				<h3>Efectivo</h3>
+			  </div>
+		  
+			  <div class="metod">
+				<img src="img/m3.png" alt="Producto 2" loading="lazy">
+				<h3>Yappy</h3>
+			  </div>
+		</div>
+	</section>
+	
+	<a href="https://api.whatsapp.com/send?phone=TUNUMERODEWHATSAPP" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a> 
+
+
+	<footer>
+		<br><br><br><br><hr><br>                                                                                                               
+		<p>@DulcesAleyda</p>
+		<p>Barrigón, El Copé, La Pintada</p>
+		<p>Télefono: (+507) 6873-5906</p>
+	</footer>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
