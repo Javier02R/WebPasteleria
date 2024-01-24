@@ -36,14 +36,14 @@ h4{
   font-size: 17pt;
   font-family:cursive;
   color: #351e05;*/
-  font-family: 'Brush Script MT'; /* Fuente cursiva para un toque elegante */
+  font-family: 'Brush Script MT', cursive; /* Fuente cursiva para un toque elegante */
   color: #492b1a; 
   font-size: 2.2em; /* Tamaño de la fuente */
-  font-weight: 600;
   text-align: center; /* Centrar el texto */
   margin-bottom: 20px; /* Espacio debajo del título */
   position: relative; /* Necesario para la animación */
 }
+
 
 h4::after {
   content: ""; /* Contenido vacío */
