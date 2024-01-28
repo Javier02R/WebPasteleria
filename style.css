@@ -29,42 +29,18 @@ h3{
 
 .tpack{
   background-size:cover;
+                                                                                                                                                                                                                                                                                                                                                                   
 }
 
 h4{
-  /*text-align: center;
-  font-size: 17pt;
-  font-family:cursive;
-  color: #351e05;*/
   font-family: 'Brush Script MT', cursive; /* Fuente cursiva para un toque elegante */
   color: #492b1a; 
   font-size: 2.2em; /* Tamaño de la fuente */
   text-align: center; /* Centrar el texto */
-  margin-bottom: 20px; /* Espacio debajo del título */
+  margin-top: 30px;
+  margin-bottom: 10px; /* Espacio debajo del título */
   position: relative; /* Necesario para la animación */
 }
-
-
-h4::after {
-  content: ""; /* Contenido vacío */
-  position: absolute; /* Posición absoluta */
-  width: 100%; /* Ancho completo */
-  height: 2px; /* Altura de la línea */
-  bottom: 0; /* Posición en la parte inferior */
-  left: 0; /* Posición a la izquierda */
-  background-color: #FF69B4; /* Color de la línea */
-  transform: scaleX(0); /* Inicialmente de ancho cero */
-  animation: deslizar 2s ease-in-out infinite; /* Animación automática */
-}
-
-/* Definición de la animación */
-@keyframes deslizar {
-  0% { transform: scaleX(1); } /* Ancho cero al inicio */
-  50% { transform: scaleX(0); } /* Ancho completo a la mitad */
-  100% { transform: scaleX(1); } /* Vuelve a ancho cero al final */
-}
-
-
 /* Estilos del cuerpo de la página */
 
 .header {
