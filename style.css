@@ -647,7 +647,7 @@ h4{
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
-  margin: 10px;
+  margin: 20px;
   justify-items: center;
 }
 
@@ -726,7 +726,7 @@ h4{
 
   .producto {
     flex: 0 0 auto;
-    width: 90%;
+    width: 70%;
     margin-right: 20px;
   }
 }
