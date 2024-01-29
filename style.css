@@ -14,7 +14,7 @@
   
 
 body {
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("img/back.jfif");
+  background: linear-gradient(rgba(255, 255, 255, 0.705), rgba(255, 255, 255, 0.5)), url("img/back.jfif");
   background-repeat: no-repeat;
   background-size: cover ;
 }
@@ -37,7 +37,7 @@ h4{
   font-family: 'Brush Script MT', cursive; /* Fuente cursiva para un toque elegante */
   color: #492b1a; 
   font-size: 2.2em; /* Tamaño de la fuente */
-  font-weight: 600;
+  font-weight: 1000;
   text-align: center; /* Centrar el texto */
   margin-top: 30px;
   margin-bottom: 10px; /* Espacio debajo del título */
