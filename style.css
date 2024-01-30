@@ -37,11 +37,10 @@ h4{
   font-family: 'Brush Script MT', cursive; /* Fuente cursiva para un toque elegante */
   color: #492b1a; 
   font-size: 2.2em; /* Tamaño de la fuente */
-  font-weight: 1000;
+  font-weight: 900;
   text-align: center; /* Centrar el texto */
   margin-top: 30px;
   margin-bottom: 10px; /* Espacio debajo del título */
-  position: relative; /* Necesario para la animación */
 }
 /* Estilos del cuerpo de la página */
 
@@ -730,3 +729,4 @@ h4{
     margin-right: 20px;
   }
 }
+
