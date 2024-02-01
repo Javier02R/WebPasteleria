@@ -20,7 +20,6 @@ body {
 }
 
 h3{
-  background-color: rgb(255, 255, 255);;
   color: #492b1a;
   text-align: center;
   font-size: 16pt;
@@ -38,7 +37,7 @@ h4{
   font-family: 'Brush Script MT', cursive; /* Fuente cursiva para un toque elegante */
   color: #492b1a; 
   font-size: 2.2em; /* Tamaño de la fuente */
-  font-weight: 600;
+  font-weight: 1000;
   text-align: center; /* Centrar el texto */
   margin-top: 30px;
   margin-bottom: 10px; /* Espacio debajo del título */
