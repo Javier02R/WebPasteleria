@@ -734,13 +734,13 @@ h4{
   background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
   border-radius: 10px;
   backdrop-filter: blur(10px); /* Efecto glassmorphism */
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .banner-text {
-  font-size: 24px;
+  font-size: 20px;
   color: #333;
   margin: 0;
 }
@@ -764,4 +764,21 @@ h4{
 .tarifa {
   color: #e91e63; /* Color rosa profundo para destacar la tarifa */
   font-weight: bold;
+}
+
+#carrito {
+  width: 50px;
+  height: 30px;
+  background-image: #3498db;
+  position: relative;
+  animation: moveCart 5s linear infinite; /* Aplicar la animación aquí */
+}
+
+@keyframes moveCart {
+  0% {
+    left: -50px;
+  }
+  100% {
+    left: calc(100% + 50px);
+  }
 }
