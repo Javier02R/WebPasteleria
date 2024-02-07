@@ -758,12 +758,16 @@ h5{
   font-weight: bold;
 }
 
+#container-car {
+  position: relative;
+}
+
 #carrito {
   width: 50px;
-  height: 30px;
+  height: 40px;
   position: absolute;
-  padding-top: 200px;
-  animation: moveCart 5s linear infinite; /* Aplicar la animación aquí */
+  top: 200px;
+  animation: moveCart 5s linear infinite;
 }
 
 @keyframes moveCart {
@@ -774,4 +778,3 @@ h5{
     left: calc(100% + 50px);
   }
 }
-
