@@ -729,26 +729,18 @@ h4{
     margin-right: 20px;
   }
 }
-
-.banner {
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
-  border-radius: 10px;
-  backdrop-filter: blur(10px); /* Efecto glassmorphism */
-  padding: 10px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.banner-text {
-  font-size: 20px;
-  color: #333;
-  margin: 0;
-}
-
 /* Estilos para la sección de información de envío */
+
+h5{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:#ffffff;
+  text-align: center;
+  font-size: 40px;
+}
 .envio-info {
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
-  border-radius: 10px;
+  height: 400px;
+  background: linear-gradient(rgba(255, 0, 140, 0.788), rgba(34, 33, 33, 0.514)), url("img/backdeliv.jpeg");
+  background-size:cover;
   padding: 20px;
   margin-top: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -756,21 +748,21 @@ h4{
 
 .info-text {
   font-size: 18px;
-  color: #555;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 /* Estilos para el texto de tarifa de envío */
 .tarifa {
-  color: #e91e63; /* Color rosa profundo para destacar la tarifa */
+  color: #09ff00; /* Color rosa profundo para destacar la tarifa */
   font-weight: bold;
 }
 
 #carrito {
   width: 50px;
   height: 30px;
-  background-image: #3498db;
-  position: relative;
+  position: absolute;
+  padding-top: 200px;
   animation: moveCart 5s linear infinite; /* Aplicar la animación aquí */
 }
 
@@ -782,3 +774,4 @@ h4{
     left: calc(100% + 50px);
   }
 }
+
