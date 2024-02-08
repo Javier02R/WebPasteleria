@@ -759,18 +759,25 @@ h5{
 }
 
 #container-car {
+  display: flex;
   position: relative;
-  margin: 20px;
+  width: 40%;
 }
 
 #carrito {
   width: 50px;
   height: 40px;
   position: absolute;
-  top: 200px;
-  margin: 20px;
+  top: 275px;
   animation: moveCart 5s linear infinite;
 }
+
+#map {
+  display: block; /* Evita el espacio adicional debajo de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente en la página */
+  height: auto;
+}
+
 
 @keyframes moveCart {
   0% {
