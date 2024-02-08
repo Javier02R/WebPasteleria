@@ -767,6 +767,7 @@ h5{
   height: 40px;
   position: absolute;
   top: 200px;
+  margin: 10px;
   animation: moveCart 5s linear infinite;
 }
 
