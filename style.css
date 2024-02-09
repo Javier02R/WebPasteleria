@@ -28,15 +28,15 @@ h3{
   font-style: italic;
 }
 
-.tpack{
+.tpack{  
   background-size:cover;
                                                                                                                                                                                                                                                                                                                                                                    
 }
 
 h4{
-  font-family: 'Brush Script MT', cursive; /* Fuente cursiva para un toque elegante */
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #492b1a; 
-  font-size: 2.2em; /* Tamaño de la fuente */
+  font-size: 1.8em; /* Tamaño de la fuente */
   font-weight: 1000;
   text-align: center; /* Centrar el texto */
   margin-top: 30px;
@@ -761,7 +761,7 @@ h5{
 #container-car {
   display: flex;
   position: relative;
-  width: 40%;
+  width: 100%;
 }
 
 #carrito {
