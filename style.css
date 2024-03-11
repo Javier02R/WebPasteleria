@@ -24,7 +24,7 @@ h3{
   text-align: center;
   font-size: 16pt;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 600;
+  font-weight: 570;
   font-style: italic;
 }
 
@@ -71,7 +71,7 @@ h4{
 }
 
 .header .logo img {
-  height: 40px !important;
+  height: 30px !important;
   width: auto;
   margin: 0 170px 0 20px;
   transition: all 0.3s;
