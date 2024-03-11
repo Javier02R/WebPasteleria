@@ -787,3 +787,47 @@ h5{
     left: calc(100% + 50px);
   }
 }
+
+
+/* Estilos generales del footer */
+footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para los enlaces */
+footer a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+}
+
+/* Estilos para los enlaces al pasar el mouse */
+footer a:hover {
+  color: #ff7f50;
+}
+
+/* Estilos para el logo */
+.logo {
+  display: block;
+  margin: 0 auto 10px;
+  width: 100px;
+}
+
+/* Estilos para las redes sociales */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
