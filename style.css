@@ -71,9 +71,9 @@ h4{
 }
 
 .header .logo img {
-  height: 30px !important;
+  height: 32px !important;
   width: auto;
-  margin: 0 170px 0 20px;
+  margin: 0 20px 0 0;
   transition: all 0.3s;
 }
 
