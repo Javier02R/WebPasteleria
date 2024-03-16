@@ -1,5 +1,5 @@
 # WebPasteleria
-# billetera-digital
+
 Reto de programacion -Frontend
 
 ## Descripción
