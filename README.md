@@ -1,7 +1,5 @@
 # WebPasteleria
 
-Reto de programacion -Frontend
-
 ## Descripción
 Mostrador de productos de pasteleria, para pedidos en linea.
 
