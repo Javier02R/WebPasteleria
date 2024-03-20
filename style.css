@@ -233,7 +233,46 @@ h4{
   }
 }
 
+/* Estilo para la barra de búsqueda */
+.barra-busqueda {
+  padding: 10px;
+  margin-top: 55px;
+  text-align: center;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  position: relative; /* Para el efecto de iluminación */
+  overflow: hidden; /* Para el efecto de iluminación */
+}  
+.barra-busqueda form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.barra-busqueda input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff; /* Fondo blanco */
+  margin-right: 5px;
+  width: 70%; /* Ancho del campo de búsqueda */
+}
+
+.barra-busqueda button {
+  padding: 7px 15px;
+  background-color: #9009df94; /* Color de botón relacionado con dulces */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave de color */
+}
+
+.barra-busqueda button:hover {
+  background-color: #ff136d9c; /* Cambio de color al pasar el mouse */
+}
 /* Estilos específicos para alturas pequeñas */
 
 #container-slider,
@@ -243,13 +282,13 @@ h4{
   position: relative;
   display: block;
   width: 100%;
-  top: 30px;
+  top: 0px;
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 4%;
   margin-bottom: 0%;
 }
-
+  
 #container-slider {
   position: relative;
   overflow: hidden;
@@ -260,7 +299,7 @@ h4{
 
 #slider {
   min-height: 1000px;
-  margin-bottom: -350px;
+  margin-bottom: -400px;
 
 }
 
@@ -737,7 +776,7 @@ h5{
   text-align: center;
   font-size: 40px;
 }
-.envio-info {
+.envio-info { 
   height: 400px;
   background: linear-gradient(rgba(255, 0, 140, 0.788), rgba(34, 33, 33, 0.514)), url("img/backdeliv.jpeg");
   background-size:cover;
@@ -776,6 +815,7 @@ h5{
   display: block; /* Evita el espacio adicional debajo de la imagen */
   margin: 0 auto; /* Centra la imagen horizontalmente en la página */
   height: auto;
+  mask-image: linear-gradient();
 }
 
 
