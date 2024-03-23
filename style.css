@@ -296,7 +296,11 @@ h4{
 #close-filtered-cakes {
   margin: 0 auto; /* Esto centra horizontalmente el botón */
   display: block; /* Asegúrate de que el botón ocupe todo el ancho disponible */
-  padding: 5px 10px;
+  padding: 5px 100px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff0022;
+  color: #ffffff;
 }
 
 
