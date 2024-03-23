@@ -82,4 +82,48 @@ function openNav(){
           alert('¡Producto agregado al carrito de compras!');
       });
   });
-  
+
+  function searchCakes() {
+    var input = document.getElementById("search-input").value.toLowerCase().trim();
+    var searchWords = input.split(' '); // Divide la entrada del usuario en palabras individuales
+    var products = document.querySelectorAll(".producto");
+    var slider = document.getElementById("filtered-cakes-slider");
+
+    // Limpia el slider antes de agregar nuevas tarjetas
+    slider.innerHTML = '';
+
+    products.forEach(function(product) {
+        var productTitle = product.querySelector("img").alt.toLowerCase();
+        var found = false;
+
+        // Verifica si alguna de las palabras de búsqueda está contenida en el texto del atributo "alt"
+        searchWords.forEach(function(word) {
+            if (productTitle.includes(word)) {
+                found = true;
+            }
+        });
+
+        if (found) {
+            // Clona la tarjeta de pastel coincidente y la agrega al slider
+            var clonedProduct = product.cloneNode(true);
+            slider.appendChild(clonedProduct);
+        }
+    });
+
+    // Muestra el contenedor de tarjetas filtradas
+    document.getElementById("filtered-cakes-container").style.display = "block";
+    showButton();
+}
+
+function closeFilteredCakes() {
+    // Oculta el contenedor de tarjetas filtradas al hacer clic en el botón de cerrar
+    document.getElementById("filtered-cakes-container").style.display = "none";
+
+    // Limpia el slider cuando se cierra la sección
+    var slider = document.getElementById("filtered-cakes-slider");
+    slider.innerHTML = '';
+}
+
+function showButton() {
+    document.getElementById("boton2").style.display = "block"; // Mostrar el botón
+}

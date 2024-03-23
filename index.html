@@ -45,6 +45,17 @@
 			<button type="button" onclick="searchCakes()">Buscar</button>
 		</form>
 	</div>
+
+	<div id="filtered-cakes-container">
+		<div id="filtered-cakes-slider">
+			<!-- Las tarjetas de pastel filtradas se agregarán aquí -->
+		</div>
+		<div id="boton2" style="display: none;">
+			<button id="close-filtered-cakes" onclick="closeFilteredCakes()">Cerrar</button>
+		</div>
+	</div>
+	
+
     <section id="container-slider">	
 		<ul class="listslider">
 			<li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
@@ -87,7 +98,7 @@
 			<li style="
 			background-image: url('img/slide3.webp'), linear-gradient(to top, rgba(214, 38, 38, 0.747), rgb(255, 255, 255));
 			z-index:1; opacity: 1;">
-				<div class="content_slider" >
+				<div class="content_slider" >   
 					<div>
 						<h2>Postres y abrebocas</h2>
 						<p>Nos ajustamos al presupuesto de cada cliente</p>
@@ -119,174 +130,175 @@
 
 	<section class="productos">
         <article class="producto">
-            <img src="img/s24.webp" alt="Pastel de " loading="lazy">
+            <img src="img/s24.webp" alt="XV quinceaños mariposas azul 2 pisos" loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$40.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s25.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s25.webp" alt="XV quinceaños mariposas rojo 2 pisos " loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$35.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s21.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s21.webp" alt="Papa guitarra musica trovador campesino" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$15.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
         <article class="producto">
-            <img src="img/s2.webp" alt="Pastel de " loading="lazy">
+            <img src="img/s2.webp" alt="Graduacion meme celebracion promo" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s3.webp" alt="Pastel de " loading="lazy">
+            <img src="img/s3.webp" alt="Mamá mama flores cumpleaños" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
         <article class="producto">
-            <img src="img/s4.webp" alt="Pastel de " loading="lazy">
+            <img src="img/s4.webp" alt="hombre cerveza corona navidad cumpleaños" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$30.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s5.webp" alt="Pastel de " loading="lazy">
+            <img src="img/s5.webp" alt="Amarillo flores girasol mujer cumpleaños mamá" loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s6.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s6.webp" alt="Cuadrado mujer mamá flores sencillo" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s7.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s7.webp" alt="Plancha grande morado cumpleaños" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$40.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s8.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s8.webp" alt="Cuadrado mujer mamá flores sencillo" loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s22.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s22.webp" alt="Graduacion Promo 2024 festejo celebracion" loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s13.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s13.webp" alt="Niña vaca lola granja loka" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s9.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s9.webp" alt="Cuadrado mujer  abuela mamá flores sencillo" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s10.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s10.webp" alt="Cuadrado mujer mamá flores sencillo cumpleaños" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s17.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s17.webp" alt="Bautizo primera comunion" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s11.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s11.webp" alt="Terror brujas hallowen hallowin miedo" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s12.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s12.webp" alt="Cumpleaños fresas morado meme" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s18.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s18.webp" alt="elegante mamá abuela mujer señora especial" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s27.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s27.webp" alt="elegante mamá abuela mujer señora especial dorado brillo flores de azucar" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$30.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s20.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s20.webp" alt="Astronauta falcon spacex hombre niño espacial" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s14.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s14.webp" alt="safari niña" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$30.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s15.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s15.webp" alt="Cuadrado mujer mamá flores sencillo" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
+
         </article>  
 		<article class="producto">
-            <img src="img/s16.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s16.webp" alt="corazón novia san valentin mamá abuela" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s28.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s28.webp" alt="cumpleaños niña chica mujer emoji cuadrado" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/s26.webp" alt="Pastel de" loading="lazy">
+            <img src="img/s26.webp" alt="niña unicornio" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
@@ -303,245 +315,245 @@
 
 	<section class="productos">
         <article class="producto">
-            <img src="img/tematico27.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico27.webp" alt="Moana niña" loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$45.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
         <article class="producto">
-            <img src="img/tematico0.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico0.webp" alt="videojuego gamer ark niño" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$30.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico40.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico40.webp" alt="videojuego gamer minecraft roblox niño"" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$35.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico2.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico2.webp" alt="hombre camion carro" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
         <article class="producto">
-            <img src="img/tematico3.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico3.webp" alt="revelación de genero baby shower" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$60.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico24.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico24.webp" alt="superheroe hombre niño guasón joker" loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico4.webp" alt="Pastel de " loading="lazy">
+            <img src="img/tematico4.webp" alt="granja zenon niño" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$30.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico6.webp" alt="Pastel " loading="lazy">
+            <img src="img/tematico6.webp" alt="conejo niña coquette" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$35.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico28.webp" alt="Pastel " loading="lazy">
+            <img src="img/tematico28.webp" alt="avestruz XV quinceaños cisnes" loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$40.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico33.webp" alt="Pastel de " loading="lazy">
+            <img src="img/tematico33.webp" alt="hombre mula mulero contenedor" loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico36.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico36.webp" alt="niña heroes en pijama" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico7.webp" alt="Pastel de " loading="lazy">
+            <img src="img/tematico7.webp" alt="blanca nieves disney princesa" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$30.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico8.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico8.webp" alt="sirena disney" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$30.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico9.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico9.webp" alt="cosmeticos coquette maquillaje" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico10.webp" alt="Pastel de " loading="lazy">
+            <img src="img/tematico10.webp" alt="minnie mouse disney" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico29.webp" alt="Pastel " loading="lazy">
+            <img src="img/tematico29.webp" alt="osito oso peluche" loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico35.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico35.webp" alt="niño futbol pelota" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico39.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico39.webp" alt="jirafa babyshower" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico11.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico11.webp" alt="hermano tiradero desordenado dormir" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico12.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico12.webp" alt="superheroe batman amarillo niñoo  " loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico30.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico30.webp" alt="superheroe spiderman niño rojo " loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico13.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico13.webp" alt="mickey mouse micki disney" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico14.webp" alt="Pastel " loading="lazy">
+            <img src="img/tematico14.webp" alt="goku naruto sayayin" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$30.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico16.webp" alt="Pastel de " loading="lazy">
+            <img src="img/tematico16.webp" alt="tipico panameño pollera noviembre" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico32.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico32.webp" alt="Policia soldado seguridad hombre" loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$30.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico17.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico17.webp" alt="barca Barcelona barcelona futbol cule hombre" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico18.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico18.webp" alt="argentina futbol hombre campeon del mundo afa" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico19.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico19.webp" alt="carros hotwheels niño" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico20.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico20.webp" alt="carros hotwheels niño" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$30.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico21.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico21.webp" alt="hombre papa soldador soldadura construccion" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$20.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico22.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico22.webp" alt="pollera acordeon campesino mixto tipico panameño" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$40.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico38.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico38.webp" alt="Rapunzel princesa niña disney" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$30.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico31.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico31.webp" alt="beisbol niño hombre deporte" loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$30.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico34.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico34.webp" alt="niña anime spy family mona china" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$25.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/tematico23.webp" alt="Pastel de" loading="lazy">
+            <img src="img/tematico23.webp" alt="soldados niño ejercito policia" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$30.00</p>
 				<button class="boton-comprar">Pedir</button>
@@ -566,112 +578,112 @@
 
 	<section class="productos">
         <article class="producto">
-            <img src="img/mini1.webp" alt="Pastel de" loading="lazy">
+            <img src="img/mini1.webp" alt="mini helado barquillo" loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$12.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
         <article class="producto">
-            <img src="img/mini10.webp" alt="Pastel de" loading="lazy">
+            <img src="img/mini10.webp" alt="mini rosas" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$12.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/mini16.webp" alt="Pastel de " loading="lazy">
+            <img src="img/mini16.webp" alt="mini oreo" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$10.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
         <article class="producto">
-            <img src="img/mini18.webp" alt="Pastel de" loading="lazy">
+            <img src="img/mini18.webp" alt="mini gato gatito" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$10.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/mini2.webp" alt="Pastel de" loading="lazy">
+            <img src="img/mini2.webp" alt="mini bombero" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$10.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/mini5.webp" alt="Pastel de" loading="lazy">
+            <img src="img/mini5.webp" alt="mini graduacion escolar kinder " loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$12.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/mini4.webp" alt="Pastel de" loading="lazy">
+            <img src="img/mini4.webp" alt="mini" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$10.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/mini9.webp" alt="Pastel de" loading="lazy">
+            <img src="img/mini9.webp" alt="mini llanta neumatico carro conductor" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$10.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/mini7.webp" alt="Pastel de" loading="lazy">
+            <img src="img/mini7.webp" alt="mini princesa blanca nieve" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$10.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/mini8.webp" alt="Pastel de" loading="lazy">
+            <img src="img/mini8.webp" alt="mini princesa tinker bell" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$14.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto"> 
-            <img src="img/mini11.webp" alt="Pastel de" loading="lazy">
+            <img src="img/mini11.webp" alt="mini" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$10.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/mini12.webp" alt="Pastel de" loading="lazy">
+            <img src="img/mini12.webp" alt="mini" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$10.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/mini14.webp" alt="Pastel de" loading="lazy">
+            <img src="img/mini14.webp" alt="mini plato" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$7.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/mini15.webp" alt="Pastel de" loading="lazy">
+            <img src="img/mini15.webp" alt="mini flores amarillo amarillas girasol girasoles" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$10.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/mini17.webp" alt="Pastel" loading="lazy">
+            <img src="img/mini17.webp" alt="mini flores amarillo amarillas girasoles girasol" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$10.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/mini13.webp" alt="Pastel de Chocolate" loading="lazy">
+            <img src="img/mini13.webp" alt="mini" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$10.00</p>                                                                             
 				<button class="boton-comprar">Pedir</button>
@@ -688,21 +700,21 @@
 
 	<section class="productos">
         <article class="producto">
-            <img src="img/tematico5.webp" alt="Pastel de " loading="lazy">
+            <img src="img/tematico5.webp" alt="boda Boda " loading="lazy">
 			<div class="footerproduct">
 				<p class="precio">$18.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
         <article class="producto">
-            <img src="img/bodxv8.webp" alt="Pastel " loading="lazy">
+            <img src="img/bodxv8.webp" alt="boda " loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$18.00</p>
 				<button class="boton-comprar">Pedir</button>
 			</div>
         </article>
 		<article class="producto">
-            <img src="img/bodxv7.webp"  stalt="Pastel de" loading="lazy">
+            <img src="img/bodxv7.webp"  stalt="boda" loading="lazy">
             <div class="footerproduct">
 				<p class="precio">$18.00</p>
 				<button class="boton-comprar">Pedir</button>
