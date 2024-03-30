@@ -23,9 +23,9 @@ h3{
   color: #492b1a;
   text-align: center;
   font-size: 16pt;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 570;
-  font-style: italic;
+  padding-bottom: 20px;
 }
 
 .tpack{  
@@ -33,15 +33,33 @@ h3{
                                                                                                                                                                                                                                                                                                                                                                    
 }
 
-h4{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #492b1a; 
-  font-size: 1.8em; /* Tamaño de la fuente */
-  font-weight: 1000;
-  text-align: center; /* Centrar el texto */
-  margin-top: 30px;
-  margin-bottom: 10px; /* Espacio debajo del título */
+.title {
+  background: linear-gradient(rgba(255, 0, 140, 0), rgba(227, 134, 255, 0.788), rgba(255, 255, 255, 0.055));
 }
+
+.title i{
+  text-align: center;
+  font-size: 2em; /* Tamaño del icono */
+  color: #ffffff; /* Color del icono */
+  padding-top: 10px;
+  margin: 0 auto 5px; /* Alineación central y espacio inferior */
+  display: block; /* Hace que el icono sea un elemento de bloque */
+}
+
+.title h4 {
+  padding-top: 5px;
+  font-family:Arial, Helvetica, sans-serif/;
+  color: #ffffff; /* Utiliza un tono cálido y atractivo */
+  font-size: 1.5em; /* Aumenta ligeramente el tamaño de la fuente */
+  font-weight: 700; /* Reduce un poco el peso de la fuente */
+  text-align: center; /* Sigue centrando el texto */
+  margin-top: 20px; /* Ajusta el espacio superior */
+  margin-bottom: 20px; /* Ajusta el espacio inferior */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  letter-spacing: 1px; /* Agrega un poco de espacio entre las letras */
+  text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.377);
+}
+
 /* Estilos del cuerpo de la página */
 
 .header {
