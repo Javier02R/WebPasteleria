@@ -164,3 +164,27 @@ function closeFilteredCakes() {
 function showButton() {
     document.getElementById("boton2").style.display = "block"; // Mostrar el botón
 }
+
+//pedir pastel al wathsapp
+function sendWhatsAppMessage(button) {
+    // Encuentra la tarjeta de producto asociada al botón
+    var productCard = button.closest(".producto");
+    
+    // Obtiene la imagen de la tarjeta de producto
+    var productImage = productCard.querySelector("img");
+
+    // URL de WhatsApp con el número de teléfono y el mensaje predefinido
+    var phoneNumber = "50762577948"; // Reemplaza con el número de teléfono al que deseas enviar el mensaje
+    var message = "¡Hola! Me gustaría pedir este pastel:";
+    var imageURL = productImage.src;
+
+    // Codifica los caracteres especiales de la URL
+    message = encodeURIComponent(message);
+    imageURL = encodeURIComponent(imageURL);
+
+    // Construye la URL completa de WhatsApp
+    var whatsappURL = "whatsapp://send?phone=" + phoneNumber + "&text=" + message + "%0A" + imageURL;
+
+    // Abre WhatsApp con el mensaje predefinido y la imagen
+    window.location.href = whatsappURL;
+}
