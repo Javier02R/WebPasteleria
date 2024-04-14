@@ -83,24 +83,59 @@ function openNav(){
       });
   });
 
-  function searchCakes() {
+  // Función para calcular la distancia de Levenshtein entre dos cadenas
+function levenshteinDistance(a, b) {
+    if (a.length === 0) return b.length; 
+    if (b.length === 0) return a.length; 
+
+    var matrix = [];
+
+    // Inicializar la primera fila y la primera columna de la matriz
+    for (var i = 0; i <= b.length; i++) {
+        matrix[i] = [i];
+    }
+
+    for (var j = 0; j <= a.length; j++) {
+        matrix[0][j] = j;
+    }
+
+    // Calcular la distancia de Levenshtein
+    for (var i = 1; i <= b.length; i++) {
+        for (var j = 1; j <= a.length; j++) {
+            if (b.charAt(i - 1) === a.charAt(j - 1)) {
+                matrix[i][j] = matrix[i - 1][j - 1];
+            } else {
+                matrix[i][j] = Math.min(
+                    matrix[i - 1][j - 1] + 1,
+                    matrix[i][j - 1] + 1,
+                    matrix[i - 1][j] + 1
+                );
+            }
+        }
+    }
+
+    return matrix[b.length][a.length];
+}
+
+// Función para buscar pasteles con coincidencia difusa en el atributo "alt"
+function searchCakes() {
     var input = document.getElementById("search-input").value.toLowerCase().trim();
-    var searchWords = input.split(' '); // Divide la entrada del usuario en palabras individuales
+    var searchWords = input.split(' ').filter(Boolean); // Divide la entrada del usuario en palabras individuales y elimina palabras vacías
     var products = document.querySelectorAll(".producto");
     var slider = document.getElementById("filtered-cakes-slider");
 
     // Limpia el slider antes de agregar nuevas tarjetas
     slider.innerHTML = '';
 
+    document.getElementById("message").style.display = "none";
+
     products.forEach(function(product) {
         var productTitle = product.querySelector("img").alt.toLowerCase();
-        var found = false;
-
-        // Verifica si alguna de las palabras de búsqueda está contenida en el texto del atributo "alt"
-        searchWords.forEach(function(word) {
-            if (productTitle.includes(word)) {
-                found = true;
-            }
+        var found = searchWords.every(function(word) {
+            // Compara cada palabra de búsqueda con cada palabra en el atributo "alt" utilizando la distancia de Levenshtein
+            return productTitle.split(' ').some(function(titleWord) {
+                return levenshteinDistance(word, titleWord) <= 2; // Permitimos hasta 2 cambios en las letras para considerarlo una coincidencia
+            });
         });
 
         if (found) {
@@ -112,12 +147,14 @@ function openNav(){
 
     // Muestra el contenedor de tarjetas filtradas
     document.getElementById("filtered-cakes-container").style.display = "block";
+    document.getElementById("message").style.display = "block";
     showButton();
 }
 
 function closeFilteredCakes() {
     // Oculta el contenedor de tarjetas filtradas al hacer clic en el botón de cerrar
     document.getElementById("filtered-cakes-container").style.display = "none";
+    document.getElementById("message").style.display = "none";
 
     // Limpia el slider cuando se cierra la sección
     var slider = document.getElementById("filtered-cakes-slider");
