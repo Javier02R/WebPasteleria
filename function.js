@@ -165,7 +165,6 @@ function showButton() {
     document.getElementById("boton2").style.display = "block"; // Mostrar el botón
 }
 
-//pedir pastel al wathsapp
 function sendWhatsAppMessage(button) {
     // Encuentra la tarjeta de producto asociada al botón
     var productCard = button.closest(".producto");
@@ -176,18 +175,28 @@ function sendWhatsAppMessage(button) {
     // URL de WhatsApp con el número de teléfono y el mensaje predefinido
     var phoneNumber = "50762577948"; // Reemplaza con el número de teléfono al que deseas enviar el mensaje
     var message = "¡Hola! Me gustaría pedir este pastel:";
-    var imageURL = productImage.src;
-
-    // Modifica la URL de la imagen para cambiar el formato a JPG
-    imageURL = imageURL.replace(/\.webp$/, '.jpg');
+    var imageBase64 = getBase64Image(productImage); // Obtiene la imagen en formato base64
 
     // Codifica los caracteres especiales de la URL
     message = encodeURIComponent(message);
-    imageURL = encodeURIComponent(imageURL);
+    imageBase64 = encodeURIComponent(imageBase64);
 
     // Construye la URL completa de WhatsApp
-    var whatsappURL = "whatsapp://send?phone=" + phoneNumber + "&text=" + message + "%0A" + imageURL;
+    var whatsappURL = "whatsapp://send?phone=" + phoneNumber + "&text=" + message + "%0A" + imageBase64;
 
     // Abre WhatsApp con el mensaje predefinido y la imagen
     window.location.href = whatsappURL;
 }
+
+function getBase64Image(img) {
+    var canvas = document.createElement("canvas");
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0);
+
+    var dataURL = canvas.toDataURL("image/png");
+    return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+}
+
