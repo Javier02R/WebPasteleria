@@ -178,6 +178,9 @@ function sendWhatsAppMessage(button) {
     var message = "¡Hola! Me gustaría pedir este pastel:";
     var imageURL = productImage.src;
 
+    // Modifica la URL de la imagen para cambiar el formato a JPG
+    imageURL = imageURL.replace(/\.webp$/, '.jpg');
+
     // Codifica los caracteres especiales de la URL
     message = encodeURIComponent(message);
     imageURL = encodeURIComponent(imageURL);
