@@ -579,7 +579,7 @@ h3{
 
 .cards-container {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   gap: 20px;
   max-width:max-content;
   padding: 20px;
