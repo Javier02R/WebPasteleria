@@ -190,13 +190,26 @@ function sendWhatsAppMessage(button) {
 
 function getBase64Image(img) {
     var canvas = document.createElement("canvas");
-    canvas.width = img.width;
-    canvas.height = img.height;
+    var MAX_WIDTH = 800; // Ancho máximo de la imagen
+    var MAX_HEIGHT = 600; // Altura máxima de la imagen
+    var width = img.width;
+    var height = img.height;
+
+    // Redimensiona la imagen si es necesario
+    if (width > MAX_WIDTH || height > MAX_HEIGHT) {
+        var ratio = Math.min(MAX_WIDTH / width, MAX_HEIGHT / height);
+        width *= ratio;
+        height *= ratio;
+    }
+
+    canvas.width = width;
+    canvas.height = height;
 
     var ctx = canvas.getContext("2d");
-    ctx.drawImage(img, 0, 0);
+    ctx.drawImage(img, 0, 0, width, height);
 
-    var dataURL = canvas.toDataURL("image/png");
+    var dataURL = canvas.toDataURL("image/jpeg", 0.7); // Calidad de compresión JPEG: 0.7
     return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
 }
+
 
