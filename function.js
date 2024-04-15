@@ -165,6 +165,7 @@ function showButton() {
     document.getElementById("boton2").style.display = "block"; // Mostrar el botón
 }
 
+//pedir pastel al wathsapp
 function sendWhatsAppMessage(button) {
     // Encuentra la tarjeta de producto asociada al botón
     var productCard = button.closest(".producto");
@@ -175,41 +176,16 @@ function sendWhatsAppMessage(button) {
     // URL de WhatsApp con el número de teléfono y el mensaje predefinido
     var phoneNumber = "50762577948"; // Reemplaza con el número de teléfono al que deseas enviar el mensaje
     var message = "¡Hola! Me gustaría pedir este pastel:";
-    var imageBase64 = getBase64Image(productImage); // Obtiene la imagen en formato base64
+    var imageURL = productImage.src;
 
+    
     // Codifica los caracteres especiales de la URL
     message = encodeURIComponent(message);
-    imageBase64 = encodeURIComponent(imageBase64);
+    imageURL = encodeURIComponent(imageURL);
 
     // Construye la URL completa de WhatsApp
-    var whatsappURL = "whatsapp://send?phone=" + phoneNumber + "&text=" + message + "%0A" + imageBase64;
+    var whatsappURL = "whatsapp://send?phone=" + phoneNumber + "&text=" + message + "%0A" + imageURL;
 
     // Abre WhatsApp con el mensaje predefinido y la imagen
     window.location.href = whatsappURL;
 }
-
-function getBase64Image(img) {
-    var canvas = document.createElement("canvas");
-    var MAX_WIDTH = 800; // Ancho máximo de la imagen
-    var MAX_HEIGHT = 600; // Altura máxima de la imagen
-    var width = img.width;
-    var height = img.height;
-
-    // Redimensiona la imagen si es necesario
-    if (width > MAX_WIDTH || height > MAX_HEIGHT) {
-        var ratio = Math.min(MAX_WIDTH / width, MAX_HEIGHT / height);
-        width *= ratio;
-        height *= ratio;
-    }
-
-    canvas.width = width;
-    canvas.height = height;
-
-    var ctx = canvas.getContext("2d");
-    ctx.drawImage(img, 0, 0, width, height);
-
-    var dataURL = canvas.toDataURL("image/jpeg", 0.7); // Calidad de compresión JPEG: 0.7
-    return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
-}
-
-
