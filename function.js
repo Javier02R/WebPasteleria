@@ -131,11 +131,9 @@ function searchCakes() {
 
     products.forEach(function(product) {
         var productTitle = product.querySelector("img").alt.toLowerCase();
-        var found = searchWords.every(function(word) {
-            // Compara cada palabra de búsqueda con cada palabra en el atributo "alt" utilizando la distancia de Levenshtein
-            return productTitle.split(' ').some(function(titleWord) {
-                return levenshteinDistance(word, titleWord) <= 2; // Permitimos hasta 2 cambios en las letras para considerarlo una coincidencia
-            });
+        var found = searchWords.some(function(word) {
+            // Compara cada palabra de búsqueda con cada palabra en el atributo "alt"
+            return productTitle.includes(word); // Verifica si al menos una palabra de búsqueda está incluida en el atributo "alt"
         });
 
         if (found) {
