@@ -165,12 +165,12 @@ h3{
 /* Estilos del menú desplegable */
 .header .overlay {
   height: 400px;
-  width: 0;
+  width: 0;                                                                            
   position: fixed;
   z-index: 3;
   left: 15px;
   top: 30px;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("img/back.jfif");
+  background: linear-gradient(rgba(255, 255, 255, 0.603), rgba(255, 255, 255, 0.548)), url("img/back.jfif");
   backdrop-filter: blur(3px);
   border-radius: 8px;
   box-shadow: 0 19px 10px rgba(0, 0, 0, 0.589); /* Agregar una sombra suave */
@@ -187,7 +187,7 @@ h3{
 }
 
 .header .overlay a {
-  padding: 13px;
+  padding: 12px;
   font-size: 20px;
   display: flex;
   align-items: center;
