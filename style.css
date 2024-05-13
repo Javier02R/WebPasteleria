@@ -169,7 +169,7 @@ h3{
   position: fixed;
   z-index: 3;
   left: 15px;
-  top: 30px;
+  top: 50px;
   background: linear-gradient(rgba(255, 255, 255, 0.603), rgba(255, 255, 255, 0.548)), url("img/back.jfif");
   backdrop-filter: blur(3px);
   border-radius: 8px;

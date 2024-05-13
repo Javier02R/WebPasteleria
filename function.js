@@ -1,5 +1,5 @@
 function openNav(){
-    document.getElementById("mobile-menu").style.width = "40%";
+    document.getElementById("mobile-menu").style.width = "50%";
     document.getElementById("mobile-menu").style.height = "50%";
   }
   
