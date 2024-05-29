@@ -129,19 +129,37 @@ function searchCakes() {
 
     document.getElementById("message").style.display = "none";
 
+    // Almacenar productos que cumplen con las coincidencias parciales y completas
+    var partialMatches = [];
+    var fullMatches = [];
+
     products.forEach(function(product) {
         var productTitle = product.querySelector("img").alt.toLowerCase();
-        var found = searchWords.some(function(word) {
-            // Compara cada palabra de búsqueda con cada palabra en el atributo "alt"
+        var allWordsFound = searchWords.every(function(word) {
+            return productTitle.includes(word); // Verifica si todas las palabras de búsqueda están incluidas en el atributo "alt"
+        });
+
+        var anyWordFound = searchWords.some(function(word) {
             return productTitle.includes(word); // Verifica si al menos una palabra de búsqueda está incluida en el atributo "alt"
         });
 
-        if (found) {
-            // Clona la tarjeta de pastel coincidente y la agrega al slider
-            var clonedProduct = product.cloneNode(true);
-            slider.appendChild(clonedProduct);
+        if (allWordsFound) {
+            fullMatches.push(product);
+        } else if (anyWordFound) {
+            partialMatches.push(product);
         }
     });
+
+    // Agregar coincidencias completas primero, luego coincidencias parciales
+    fullMatches.concat(partialMatches).forEach(function(product) {
+        var clonedProduct = product.cloneNode(true);
+        slider.appendChild(clonedProduct);
+    });
+
+    // Mostrar un mensaje si no hay resultados
+    if (slider.children.length === 0) {
+        document.getElementById("message").style.display = "block";
+    }
 
     // Muestra el contenedor de tarjetas filtradas
     document.getElementById("filtered-cakes-container").style.display = "block";
