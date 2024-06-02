@@ -206,14 +206,3 @@ function sendWhatsAppMessage(button) {
     window.location.href = whatsappURL;
 }
 
-function incrementLike(button) {
-    const likeCountSpan = button.nextElementSibling;
-    let likeCount = parseInt(likeCountSpan.innerText);
-    likeCount++;
-    likeCountSpan.innerText = likeCount;
-    
-    button.classList.add('liked');
-    setTimeout(() => {
-        button.classList.remove('liked');
-    }, 600);  // Duración de la animación
-}
