@@ -755,7 +755,7 @@ h3{
 .producto:hover{
   transform: scale(1);
   background-color: rgba(234, 195, 250, 0.568);
-  color: #ffffff;
+  color: #ff004c;
   transition: background-color 1s ease;
   transform: scale(1) translateY(-4px);
 }
@@ -787,6 +787,7 @@ h3{
   color: #ff00bf;
   border: none;
   padding: 5px 20px;
+  margin-bottom: 8px;
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease;
@@ -794,10 +795,9 @@ h3{
 
 .boton-comprar:hover {
   background-color: #f821b0;
-  color: #000;
+  color: #ffffff;
   
 }
-
 .footerproduct{
   display: flex;
   overflow-x: auto;
