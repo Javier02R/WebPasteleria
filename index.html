@@ -85,7 +85,7 @@
      <a href="#boquitas" onclick="closeNav()">
       <i class="fas fa-cookie">
       </i>
-      Postres
+      Boquitas
      </a>
      <a href="#contactar" onclick="closeNav()">
       <i class="fas fa-envelope">
@@ -97,7 +97,7 @@
   </header>
   <div class="barra-busqueda">
    <form id="search-form">
-    <input id="search-input" placeholder="Buscar, ejemplo: spiderman..." type="text"/>
+    <input id="search-input" placeholder="Ejemplo: spiderman..." type="text"/>
     <button onclick="searchCakes()" type="button">
      Buscar
     </button>
@@ -219,8 +219,7 @@
     Pasteles
    </h4>
    <h3 class="tpack">
-    Pasteles que despiertan sonrisas, momentos que crean memorias. 
-			¡Explora nuestra selección y haz tus celebraciones inolvidables!
+    ¡Explora nuestra selección y haz tus celebraciones inolvidables!
    </h3>
   </div>
   <section class="productos">
@@ -233,6 +232,12 @@
      <button class="boton-comprar" onclick="sendWhatsAppMessage(this)">
       Pedir
      </button>
+     <div class="like-section">
+        <button class="like-button" onclick="incrementLike(this)">
+            <i class="fa fa-heart"></i>
+        </button>
+        <span class="like-count">0</span>
+    </div>
     </div>
    </article>
    <article class="producto">
@@ -1839,8 +1844,11 @@
     © 2024 Dulces Aleyda. Todos los derechos reservados.
    </p>
    <br/>
-   <p style="font-size: 10px;">
-    Diseñado por rodriguezjavier11g@gmail.com
+   <p style="font-size: 9px;">
+    Diseñado por JavierR
+   </p>
+   <p style="font-size: 9px;">
+    Contacto: rodriguezjavier11g@gmail.com
    </p>
   </footer>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
