@@ -924,3 +924,26 @@ footer a:hover {
   height: 30px;
   vertical-align: middle;
 }
+
+.counter-container {
+  font-family:'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  padding: 5px;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  max-width: 200px; /* Ancho máximo del contenedor */
+  margin: 20px auto; /* Centra el contenedor horizontalmente y agrega margen vertical */
+}
+
+.counter-container img {
+  width: 100px; /* Tamaño de la imagen */
+  height: auto;
+  opacity: 0.8; /* Opacidad para hacerlo más discreto */
+  transition: opacity 0.3s ease; /* Efecto de transición */
+}
+
+.counter-container img:hover {
+  opacity: 1; /* Aumenta la opacidad al pasar el ratón */
+}
