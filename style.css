@@ -305,15 +305,44 @@ h3{
 #filtered-cakes-slider::-webkit-scrollbar {
   display: none; /* Ocultar la barra de desplazamiento en navegadores basados en WebKit */
 }
+
+.searchbutt{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
  
 #close-filtered-cakes {
-  width: 100%;
-  margin: 0 auto; /* Esto centra horizontalmente el botón */
+  width: 100px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 800; /* Reduce un poco el peso de la fuente */
+  letter-spacing: 2px;
+  margin: 20px 10px; /* Centra horizontalmente el botón y agrega margen superior/inferior */
   display: block; /* Asegúrate de que el botón ocupe todo el ancho disponible */
-  padding: 5px 100px;
+  padding: 10px 10px;
   border: none;
-  background-color: #cc00ff81;
-  color: #ffffff;
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: #d6141400; /* Un color de fondo más vistoso (tomate) */
+  color: #462d00;
+  font-family: 'Tilt Neon', sans-serif; /* Asegúrate de usar una fuente legible */
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.192); /* Sombra suave */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+#close-filtered-cakes:hover {
+  background-color: #dddddd62; /* Color de fondo más oscuro al pasar el ratón */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el ratón */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+#close-filtered-cakes:active {
+  background-color: #ff6347; /* Color de fondo al hacer clic */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña al hacer clic */
+  transform: scale(0.95); /* Reduce ligeramente el tamaño al hacer clic */
 }
 
 
