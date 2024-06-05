@@ -309,10 +309,11 @@ h3{
 .searchbutt{
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
  
 #close-filtered-cakes {
+  text-decoration: none; /* Elimina la decoración de subrayado */
   width: 100px;
   text-align: center;
   font-size: 14px;
