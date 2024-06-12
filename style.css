@@ -14,7 +14,7 @@
   
 
 body {
-  background: linear-gradient(rgba(255, 255, 255, 0.705), rgba(212, 115, 164, 0.164));
+  background: linear-gradient(rgba(255, 255, 255, 0.705), rgba(255, 255, 255, 0.795));
   background-repeat: no-repeat;
   background-size: cover ;
 }
@@ -170,7 +170,7 @@ h3{
   z-index: 3;
   left: 15px;
   top: 50px;
-  background: linear-gradient(rgba(255, 255, 255, 0.603), rgba(255, 255, 255, 0.548)), url("img/back.jfif");
+  background: linear-gradient(rgba(255, 255, 255, 0.603), rgba(255, 255, 255, 0.548));
   backdrop-filter: blur(3px);
   border-radius: 8px;
   box-shadow: 0 19px 10px rgba(0, 0, 0, 0.589); /* Agregar una sombra suave */
@@ -784,10 +784,8 @@ h3{
 
 .producto:hover{
   transform: scale(1);
-  background-color: rgba(234, 195, 250, 0.568);
-  color: #ff004c;
   transition: background-color 1s ease;
-  transform: scale(1) translateY(-4px);
+  transform: scale(1) translateY(-5px);
 }
 
 .producto:hover .precio {
@@ -812,10 +810,14 @@ h3{
 
 
 .boton-comprar {
-  background-color:transparent;
+  background-color:#ffffff;
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em; 
   align-self: end;
   border-radius: 5px;
-  color: #ff00bf;
+  color: #271700;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.192); /* Sombra suave */
   border: none;
   padding: 5px 20px;
   margin-bottom: 8px;
