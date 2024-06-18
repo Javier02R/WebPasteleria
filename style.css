@@ -83,7 +83,9 @@ h3{
 }
 
 .header .logo img {
-  height: 32px !important;
+  display: flex;
+  align-items: start;
+  height: 50px !important;
   width: auto;
   margin: 0 20px 0 0;                                                                                                                                                                                                                                                                                                                                                        
   transition: all 0.3s;
@@ -248,7 +250,7 @@ h3{
 /* Estilo para la barra de búsqueda */
 .barra-busqueda {
   padding: 10px;
-  margin-top: 55px;
+  margin-top: 60px;
   text-align: center;
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
