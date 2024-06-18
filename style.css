@@ -58,7 +58,7 @@ h3{
 
 .header {
   background: linear-gradient(to top, rgba(255, 255, 255, 0.801), 
-  rgba(255, 255, 255, 0.726)); /* Gradiente de transparencia */
+  rgba(255, 255, 255, 0.664)); /* Gradiente de transparencia */
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -85,7 +85,7 @@ h3{
 .header .logo img {
   height: 45px !important;
   width: auto;
-  margin: 0 0 0 -80px;                                                                                                                                                                                                                                                                                                                                                        
+  margin: 0 20px 0 0;                                                                                                                                                                                                                                                                                                                                                        
   transition: all 0.3s;
 }
 
