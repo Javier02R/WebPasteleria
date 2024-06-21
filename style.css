@@ -84,6 +84,7 @@ h3{
 
 .header .logo img {
   height: 45px !important;
+  margin-top: 10px;
   width: auto;
   margin: 0 20px 0 0;                                                                                                                                                                                                                                                                                                                                                        
   transition: all 0.3s;
@@ -132,6 +133,8 @@ h3{
   background-color: #ffffff;
   color: rgb(68, 53, 4);
   padding: 9px 15px;
+  margin-right: 20px;
+  margin-left: 250px;
   border: none;
   cursor: pointer;
   transition: all 0.3s;
@@ -796,8 +799,9 @@ h3{
 
 .producto img {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
-  max-width: 100%;
-  object-fit: contain;
+  width: 90%; /* Asegúrate de que las imágenes llenen el ancho de la tarjeta */
+  height: auto; /* Establece una altura fija para las imágenes */
+  object-fit: cover; /* Ajusta el contenido de la imagen para llenar el área */
   padding: 10px;
   margin: auto;
 }
