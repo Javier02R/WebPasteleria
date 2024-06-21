@@ -134,7 +134,6 @@ h3{
   color: rgb(68, 53, 4);
   padding: 9px 15px;
   margin-right: 20px;
-  margin-left: 250px;
   border: none;
   cursor: pointer;
   transition: all 0.3s;
@@ -251,7 +250,7 @@ h3{
 /* Estilo para la barra de búsqueda */
 .barra-busqueda {
   padding: 10px;
-  margin-top: 60px;
+  margin-top: 70px;
   text-align: center;
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -801,7 +800,6 @@ h3{
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
   width: 90%; /* Asegúrate de que las imágenes llenen el ancho de la tarjeta */
   height: auto; /* Establece una altura fija para las imágenes */
-  object-fit: cover; /* Ajusta el contenido de la imagen para llenar el área */
   padding: 10px;
   margin: auto;
 }
