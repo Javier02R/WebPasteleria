@@ -83,41 +83,7 @@ function openNav(){
       });
   });
 
-  // Función para calcular la distancia de Levenshtein entre dos cadenas
-function levenshteinDistance(a, b) {
-    if (a.length === 0) return b.length; 
-    if (b.length === 0) return a.length; 
-
-    var matrix = [];
-
-    // Inicializar la primera fila y la primera columna de la matriz
-    for (var i = 0; i <= b.length; i++) {
-        matrix[i] = [i];
-    }
-
-    for (var j = 0; j <= a.length; j++) {
-        matrix[0][j] = j;
-    }
-
-    // Calcular la distancia de Levenshtein
-    for (var i = 1; i <= b.length; i++) {
-        for (var j = 1; j <= a.length; j++) {
-            if (b.charAt(i - 1) === a.charAt(j - 1)) {
-                matrix[i][j] = matrix[i - 1][j - 1];
-            } else {
-                matrix[i][j] = Math.min(
-                    matrix[i - 1][j - 1] + 1,
-                    matrix[i][j - 1] + 1,
-                    matrix[i - 1][j] + 1
-                );
-            }
-        }
-    }
-
-    return matrix[b.length][a.length];
-}
-
-// Función para buscar pasteles con coincidencia difusa en el atributo "alt"
+// Función para buscar imágenes con coincidencia exacta de palabras en el atributo "alt"
 function searchCakes() {
     var input = document.getElementById("search-input").value.toLowerCase().trim();
     var searchWords = input.split(' ').filter(Boolean); // Divide la entrada del usuario en palabras individuales y elimina palabras vacías
@@ -135,12 +101,14 @@ function searchCakes() {
 
     products.forEach(function(product) {
         var productTitle = product.querySelector("img").alt.toLowerCase();
+        var altWords = productTitle.split(' '); // Divide el atributo "alt" en palabras
+
         var allWordsFound = searchWords.every(function(word) {
-            return productTitle.includes(word); // Verifica si todas las palabras de búsqueda están incluidas en el atributo "alt"
+            return altWords.includes(word); // Verifica si todas las palabras de búsqueda están incluidas en el atributo "alt" como palabras completas
         });
 
         var anyWordFound = searchWords.some(function(word) {
-            return productTitle.includes(word); // Verifica si al menos una palabra de búsqueda está incluida en el atributo "alt"
+            return altWords.includes(word); // Verifica si al menos una palabra de búsqueda está incluida en el atributo "alt" como palabra completa
         });
 
         if (allWordsFound) {
