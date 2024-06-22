@@ -315,12 +315,13 @@ h3{
  
 #close-filtered-cakes {
   text-decoration: none; /* Elimina la decoración de subrayado */
-  width: 100px;
+  width: 130px;
   text-align: center;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 800; /* Reduce un poco el peso de la fuente */
   letter-spacing: 2px;
   margin: 20px 10px; /* Centra horizontalmente el botón y agrega margen superior/inferior */
+  margin-bottom: 300px;
   display: block; /* Asegúrate de que el botón ocupe todo el ancho disponible */
   padding: 10px 10px;
   border: none;

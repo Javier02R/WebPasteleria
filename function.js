@@ -83,7 +83,8 @@ function openNav(){
       });
   });
 
-// Función para buscar imágenes con coincidencia exacta de palabras en el atributo "alt"
+
+// Función para buscar pasteles con coincidencia difusa en el atributo "alt"
 function searchCakes() {
     var input = document.getElementById("search-input").value.toLowerCase().trim();
     var searchWords = input.split(' ').filter(Boolean); // Divide la entrada del usuario en palabras individuales y elimina palabras vacías
@@ -101,14 +102,12 @@ function searchCakes() {
 
     products.forEach(function(product) {
         var productTitle = product.querySelector("img").alt.toLowerCase();
-        var altWords = productTitle.split(' '); // Divide el atributo "alt" en palabras
-
         var allWordsFound = searchWords.every(function(word) {
-            return altWords.includes(word); // Verifica si todas las palabras de búsqueda están incluidas en el atributo "alt" como palabras completas
+            return productTitle.includes(word); // Verifica si todas las palabras de búsqueda están incluidas en el atributo "alt"
         });
 
         var anyWordFound = searchWords.some(function(word) {
-            return altWords.includes(word); // Verifica si al menos una palabra de búsqueda está incluida en el atributo "alt" como palabra completa
+            return productTitle.includes(word); // Verifica si al menos una palabra de búsqueda está incluida en el atributo "alt"
         });
 
         if (allWordsFound) {
