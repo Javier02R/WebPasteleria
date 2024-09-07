@@ -157,8 +157,8 @@ function sendWhatsAppMessage(button) {
     var productImage = productCard.querySelector("img");
 
     // URL de WhatsApp con el número de teléfono y el mensaje predefinido
-    var phoneNumber = "50762577948"; // Reemplaza con el número de teléfono al que deseas enviar el mensaje
-    var message = "¡Hola! Me gustaría pedir este pastel:";
+    var phoneNumber = "50768735906"; // Reemplaza con el número de teléfono al que deseas enviar el mensaje
+    var message = "¡Hola! Quiero consultar sobre este pastel:";
     var imageURL = productImage.src;
 
     
